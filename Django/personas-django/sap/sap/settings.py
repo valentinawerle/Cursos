@@ -72,20 +72,16 @@ WSGI_APPLICATION = "sap.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-#DATABASES = {
-#    "default": {
-#       "ENGINE": "django.db.backends.sqlite3",
-#      "NAME": BASE_DIR / "db.sqlite3",
-# }
-#}
+
 
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "sap_db",
+        "USER": "postgres",
         "PASSWORD": "hola123",
         "HOST": "localhost",
-        "PORT": "5000"
+        "PORT": "5000",
     }
 }
 
