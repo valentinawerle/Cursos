@@ -32,4 +32,10 @@ console.log('Duration: ', duration);
 console.log('Author: ', author);
 
 
+const[,, trunks = 'Not found']: string[] = ['Goku', 'Vegeta'];
+
+console.error('Personaje 3:', trunks);
+
 export {};
+
+
