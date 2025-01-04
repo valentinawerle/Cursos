@@ -10,7 +10,8 @@ import { setupCounter } from './counter.ts'
 //import './topic/06-function-destructuring.ts'
 //import './topic/07-import-export.ts'
 //import './topic/08-classes.ts'
-import './topic/09-generics.ts'
+//import './topic/09-generics.ts'
+import './topic/10-decorators.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `Hola mundo
   <div>
