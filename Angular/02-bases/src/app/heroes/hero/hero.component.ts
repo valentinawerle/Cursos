@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { __decorate } from "tslib"; // Import the tslib module
 
 @Component({
   selector: 'app-heroes-hero',
