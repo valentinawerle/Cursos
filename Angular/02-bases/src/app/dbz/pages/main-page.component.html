@@ -5,21 +5,15 @@
 <div class="row">
     <div class="col">
 
-        <app-dbz-list></app-dbz-list>
+        <!--onDelete-->
+        <dbz-list [characterList]="characters"
+                  (onDelete)="onDeleteCharacter($event)"></dbz-list>
 
 
     </div>
 
     <div class="col">
-        <h4>Agregar personaje</h4>
-        <form class="row">
-            <input type="text" class="form-control mb-2" placeholder="Nombre">
-
-            <input type="numbre" class="form-control mb-2" placeholder="Poder">
-
-            <button type="submit" class="btn btn-primary">
-                Agregar
-            </button>
-        </form>
+        
+        <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
     </div>
 </div>
