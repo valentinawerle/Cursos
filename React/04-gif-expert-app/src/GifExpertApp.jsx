@@ -18,9 +18,9 @@ export const GifExpertApp = () => {
     <h1>GifsExpertApp</h1>
 
     {/*Input*/}
-    <AddCategory />
+    <AddCategory setCategories= {setCategories} />
 
-    <button onClick= {onAddCategory}>Agregar</button>
+
 
     {/*Listado*/}
     <ol>
