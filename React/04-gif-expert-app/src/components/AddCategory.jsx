@@ -1,16 +1,16 @@
-import { useState } from "react"
+import { useState } from 'react';
 
-export const AddCategory = (setCategories) => {
+export const AddCategory = () => {
 
     const [inputValue, setInputValue] = useState('One Punch');
 
-    const onInputChange= (event) => {
-        setInputValue(event.target.value);
+    const onInputChange= (target) => {
+        setInputValue( target.value);
     }
 
     const onSubmit = (event) => {
         event.preventDefault();
-        setCategories((categories) => [...categories, inputValue]);
+        console.log(inputValue);
     }
 
   return (
